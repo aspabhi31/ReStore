@@ -77,3 +77,6 @@ C:\Users\DELL\ReStore\API\obj\Debug\net7.0\refint\API.dll
 C:\Users\DELL\ReStore\API\obj\Debug\net7.0\API.pdb
 C:\Users\DELL\ReStore\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\DELL\ReStore\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\DELL\ReStore\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+C:\Users\DELL\ReStore\API\bin\Debug\net7.0\Npgsql.dll
+C:\Users\DELL\ReStore\API\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

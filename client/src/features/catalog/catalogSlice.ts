@@ -102,7 +102,7 @@ export const catalogSlice = createSlice({
         }
     },
     extraReducers: (builder => {
-        builder.addCase(fetchProductsAsync.pending, (state, action) => {
+        builder.addCase(fetchProductsAsync.pending, (state, _action) => {
             state.status = 'pendingFetchProducts'
         });
         builder.addCase(fetchProductsAsync.fulfilled, (state, action) => {

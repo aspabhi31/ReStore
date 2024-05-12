@@ -4,8 +4,8 @@ import { FieldValues, FormProvider, useForm } from "react-hook-form";
 import AddressForm from "./AddressForm";
 import PaymentForm from "./PaymentForm";
 import Review from "./Review";
-import { yupResolver } from '@hookform/resolvers/yup';
-import { validationSchema } from "./checkoutValidation";
+// import { yupResolver } from '@hookform/resolvers/yup';
+// import { validationSchema } from "./checkoutValidation";
 import { useAppDispatch } from "../../app/store/configureStore";
 import agent from "../../app/api/agent";
 import { clearBasket } from "../basket/basketSlice";
@@ -32,11 +32,11 @@ export default function CheckoutPage() {
     const [loading, setLoading] = useState(false);
     const dispatch = useAppDispatch();
 
-    const currentValidationSchema = validationSchema[activeStep];
+    // const _currentValidationSchema = validationSchema[activeStep];
 
     const methods = useForm({
         mode: 'all',
-        resolver: yupResolver(currentValidationSchema)
+        // resolver: yupResolver(currentValidationSchema)
     })
 
     useEffect(() => {
