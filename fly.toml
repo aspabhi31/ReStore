@@ -1,0 +1,27 @@
+# fly.toml app configuration file generated for onlineskiingshop on 2024-05-07T18:38:49-02:30
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'onlineskiingshop'
+primary_region = 'ewr'
+
+[env]
+ ASPNETCORE_URLS="http://+:8080"
+ StripeSettings_PublishableKey="pk_test_51OIDdSCOIzenFV5WhPXMezLN2ezERgw1MkUMZsZyqV3Swz1ByE4ioa1gzguWiMfQBxURq0VuK98Ue50YdWmltus700jPBQ8x26"
+
+[build]
+  image = 'aspabhi31/restore:latest'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
